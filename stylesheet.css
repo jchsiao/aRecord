@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+@import url("https://use.typekit.net/fju6hqb.css");
+
+/* COLORS
+   PINK: #d69e9e
+   BLUE: #94b6cc
+   YELLOW: #b7af92
+   GREY:#adadad */
+
+/* Do I have to make new id for every popup even though they all have the same properties */
+
+/* Can I make something do something different for each thing I click (like bold is always a color, but a different color per thing I click)
+
+/* How to skip line and go to top */
+
+/* General vertical gridding in general*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #d1d1d1;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navi {
+  font-family: futura pt, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding:5px;
+  color: #d69e9e;
+  margin-top: -80vh;
+  margin-left: 3vw;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.header {
+  background-color: #222;
+  background-image: url("images/trumanposter1.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.title {
+  margin-top: -85vh;
+  margin-right: 8vw;
+  text-align: center;
+  font-size: 9em;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  color: #d69e9e;
+  text-transform: lowercase;
+  line-height: 120px;
+}
+
+.name {
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-size: 1em;
+  color: #d1d1d1;
+  margin-top: 40px;
+  text-transform: uppercase;
+  border-bottom: 1px #d69e9e solid;
+  margin-left: 42%;
+  margin-right: 42%;
+}
+
+.excerpt {
+  margin-left: 37vw;
+  margin-right: 37vw;
+  margin-top: 45px;
+  margin-bottom: 10vh;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-size: 20px;
+}
+
+
+.start {
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 44vw;
+  margin-right: 44vw;
+  margin-bottom: -2vh;
+  font-family: futura-pt, sans-serif;
+  font-size: 15px;
+  color: #d1d1d1;
+  padding: 20px;
+  border: 1px #d69e9e solid;
+  border-radius: 30px;
+  transition: 0.5s all;
+  background-color: transparent;
+}
+
+.start:hover {
+  color: #171C1F;
+  background-color: #d69e9e;
+}
+
+.movie {
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: 260px;
+    height: relative;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: lowercase;
+
+}
+
+.date {
+    font-family: futura-pt, sans-serif;
+    font-size: 26px;
+    width: 260px;
+    height: relative;
+    border-radius: 5px;
+    color: #272b33;
+    display: inline-block;
+}
+
+
+.chicago {
+    width: 150px;
+    margin-left: 52vw;
+    border: 2px #b7af92 solid;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #272b33;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.chicago:hover {
+  color: #b7af92;
+}
+
+.changeling {
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 52vw;
+    border: 2px #b7af92 solid;
+    color: #272b33;
+    font-size: 1.5em;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.changeling:hover {
+  color: #b7af92;
+}
+
+.sAway {
+    text-align: right;
+    width: 240px;
+    margin-left: 27vw;
+    border: 2px #94b6cc solid;
+    color: #272b33;
+    font-size: 2em;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.sAway:hover {
+  color: #94b6cc;
+}
+
+.inception {
+    width: 225px;
+    margin-left: 52vw;
+    border: 2px #d69e9e solid;
+    color: #272b33;
+    font-size: 2.5em;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.inception:hover {
+  color: #d69e9e;
+}
+
+.tsn {
+    text-align: right;
+    color: #272b33;
+    font-size: 1.75em;
+    width: 225px;
+    margin-left: 28.1vw;
+    margin-bottom: 10px;
+    border: 2px #94b6cc solid;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.tsn:hover {
+  color: #94b6cc;
+}
+
+.avatar {
+    text-align: right;
+    border: 2px #b7af92 solid;
+    width: 80px;
+    color: #272b33;
+    margin-left: 39.4vw;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.avatar:hover {
+  color: #b7af92;
+}
+
+.marvel {
+    text-align: right;
+    color: #272b33;
+    border: 2px #b7af92 solid;
+    width: 175px;
+    margin-left: 32vw;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.marvel:hover {
+  color: #b7af92;
+}
+
+.tts {
+    width: 310px;
+    color: #272b33;
+    font-size: 2.75em;
+    margin-left: 52vw;
+    border: 2px #d69e9e solid;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.tts:hover {
+  color: #d69e9e;
+}
+
+.mulan {
+    width: 225px;
+    color: #272b33;
+    text-align: right;
+    margin-left: 28.4vw;
+    margin-top: 10px;
+    border: 2px #d69e9e solid;
+    border-radius: 100px 0px 0px 100px;
+    font-size: 2em;
+}
+
+.mulan:hover {
+  color: #d69e9e;
+}
+
+.t5w {
+    width: 150px;
+    color: #272b33;
+    text-align: right;
+    margin-left: 34.2vw;
+    border: 2px #adadad solid;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.t5w:hover {
+  color: #adadad;
+}
+
+.abm {
+    font-size: 1.5em;
+    color: #272b33;
+    width: 160px;
+    margin-left: 52vw;
+    border: 2px #94b6cc solid;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.abm:hover {
+  color: #94b6cc;
+}
+
+.sausage {
+    margin-top: 20px;
+    color: #272b33;
+    width: 150px;
+    text-align: right;
+    margin-left: 34.2vw;
+    border: 2px #adadad solid;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.sausage:hover {
+  color: #adadad;
+}
+
+.getout {
+    font-size: 1.5em;
+    color: #272b33;
+    width: 120px;
+    margin-left: 52vw;
+    margin-bottom: 50px;
+    border: 2px #94b6cc solid;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.getout:hover {
+  color: #94b6cc;
+}
+
+.cra {
+    font-size: 1.75em;
+    color: #272b33;
+    width: 200px;
+    margin-left: 52vw;
+    margin-bottom: 10px;
+    border: 2px #94b6cc solid;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.cra:hover {
+  color: #94b6cc;
+}
+
+.uat {
+    font-size: 1.25em;
+    color: #272b33;
+    width: 140px;
+    margin-left: 52vw;
+    border: 2px #94b6cc solid;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.uat:hover {
+  color: #94b6cc;
+}
+
+/* TIMELINE
+/  TIMELINE
+/  TIMELINE
+/  TIMELINE
+/  TIMELINE
+*/
+
+.firstDot {
+  margin-left: 48.65vw;
+  margin-right: 49vw;
+  margin-top: 20vh;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #171C1F;
+  display: inline-block;
+  font-size: 28px;
+  font-family: helvetica;
+}
+
+.secondDot {
+  margin-top: 10vh;
+  margin-left: 49.15vw;
+  margin-right: 50vw;
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 28px;
+  font-family: helvetica;
+}
+
+.thirdDot {
+  margin-top: 5vh;
+  margin-left: 49.15vw;
+  margin-right: 50vw;
+  margin-bottom: 10vh;
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 28px;
+  font-family: helvetica;
+}
+
+.fourthDot {
+  margin-top: 10vh;
+  margin-left: 49.15vw;
+  margin-right: 50vw;
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 28px;
+  font-family: helvetica;
+}
+
+.fifthDot {
+  margin-top: 1vh;
+  margin-left: 48.8vw;
+  margin-right: 50vw;
+  margin-bottom: 10vh;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #171C1F;
+  display: inline-block;
+  font-size: 28px;
+  font-family: helvetica;
+
+}
+
+.line {
+  height: 276.3vh;
+  border-left: 2px #171C1F solid;
+  margin-bottom: -301.1vh;
+  margin-top: 110vh;
+  margin-left: 49.65vw;
+  display: inline-block;
+  z-index:0;
+  width: 10px;
+}
+
+.dotText {
+  margin-top: -40vh;
+  margin-left: 53vw;
+  display: inline-block;
+}
+
+/* END OF TIMELINE
+/  END OF TIMELINE
+/  END OF TIMELINE
+/  END OF TIMELINE
+/  END OF TIMELINE
+*/
+
+/* POPUPS
+/  POPUPS
+/  POPUPS
+/  POPUPS
+/  POPUPS
+*/
+
+  #container{
+    margin:0 auto;
+    height: 60%;
+    width:80%;
+  }
+  #chicagoPopup {
+    position: fixed;
+    font-family: futura-pt, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #chicagoPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #changelingPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #changelingPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #sAwayPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #sAwayPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #inceptionPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #inceptionPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #tsnPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #tsnPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #mulanPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #mulanPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #abmPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #abmPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #t5wPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #t5wPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #sausagePopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #sausagePopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #getoutPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #getoutPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #craPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #craPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #uatPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #uatPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #ttsPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #ttsPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #marvelPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #marvelPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  #avatarPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+  }
+  #avatarPopup:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+
+.popupContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 8fr;
+  height: 55%;
+  width: 48%;
+  position: relative;
+  margin: 10% auto;
+  padding: 2% 2% 4% 2%;
+  background: #f8f8f8;
+}
+
+.emptyCell {
+  content: "";
+}
+
+.closebutton {
+  font-size: 15px;
+  text-align: right;
+  text-decoration: none;
+  font-family: futura-pt, sans-serif
+}
+
+.popupImage {
+  width: 87%;
+}
+
+.movieInfo {
+  font-family: futura-pt, sans-serif;
+  color: #222;
+  width: 87%;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 10%;
+  text-transform: lowercase;
+}
+
+.yellowverdict {
+  font-size:45px;
+  font-weight:700;
+  text-transform:lowercase;
+  border-bottom: 1px #b7af92 solid;
+  color: #222;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-family: futura-pt, sans-serif;
+}
+
+.pinkverdict {
+  font-size:45px;
+  font-weight:700;
+  text-transform:lowercase;
+  border-bottom: 1px #d69e9e solid;
+  color: #222;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-family: futura-pt, sans-serif;
+}
+
+.greyverdict {
+  font-size:45px;
+  font-weight:700;
+  text-transform:lowercase;
+  border-bottom: 1px #adadad solid;
+  color: #222;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-family: futura-pt, sans-serif;
+}
+
+.blueverdict {
+  font-size:45px;
+  font-weight:700;
+  text-transform:lowercase;
+  border-bottom: 1px #94b6cc solid;
+  color: #222;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-family: futura-pt, sans-serif;
+}
+
+.yellowBorder {
+  border-left: 1px #b7af92 solid;
+}
+
+.pinkBorder {
+  border-left: 1px #d69e9e solid;
+}
+
+.blueBorder {
+  border-left: 1px #94b6cc solid;
+}
+
+.greyBorder {
+  border-left: 1px #adadad solid;
+}
+
+.movieComments {
+  font-family: futura-pt, sans-serif;
+  color: #222;
+  width: 90%;
+  font-size: 18px;
+  line-height: auto;
+  margin-top: 1%;
+  padding-left: 5%;
+  padding-top: 2%;
+  text-transform: lowercase;
+}
+
+
+/* END OF POPUPS
+/  END OF POPUPS
+/  END OF POPUPS
+/  END OF POPUPS
+/  END OF POPUPS
+*/
+
+strong {
+    font-size: 1.1em;
+    font-weight: 700;
+    color:#b7af92;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ a:hover {
+ }
+
+}
